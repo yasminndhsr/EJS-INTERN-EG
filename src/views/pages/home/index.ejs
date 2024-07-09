@@ -44,6 +44,25 @@
         <div class="container">
             <div class="mx-0 px-0 mx-xl-5 px-xl-5">
                 <div class="row mt-5" id="product-area">
+                    <%products.map((item, index) => { %>
+                        <div class="col-12 col-xl-6 mb-5">
+                            <div class="card card-product bg-secondary text-light">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-4">
+                                    <img src="<%= item.foto %>" alt="" 
+                                    class="img-fluid"/>
+                                  </div>
+                                  <div class="col-8 mt-2">
+                                      <h5 class="fw-bold"><%= item.judul %></h5>
+                                      <%= item.isi %><br>
+                                      <a href="<%= item.link %>" class="btn btn-primary mt-4">Klik Disini</a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    <% }) %>
             </div>
             </div>
         </div>
@@ -73,6 +92,25 @@
                 <h3 class="fw-semi mb-5">Kata Mereka</h3>  
             </div>
             <div class="row" id="testi-area">
+                <%testi.map((item, index) => { %>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="<%= item.foto %>" class="img-fluid mt-1 ms-2">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="m-0"><%= item.nama %></p>
+                                        <p class="m-0"><%= item.univ %></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <span><%= item.isi %></span>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
                 </div>
             </div>
         </div>
