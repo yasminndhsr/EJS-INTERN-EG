@@ -22,6 +22,9 @@
   font-size: 13px !important;
 }
 
+.fz-20{
+  font-size: 20px !important;
+}
 .text-small{
   font-size: 12px;
   color: #656565;
@@ -168,6 +171,15 @@ height: 25px;
 
 .border-between{
   border-right: 1px solid rgb(177,175,175);
+}
+
+.select-profile{
+  width: 1px !important;
+}
+
+.button-profile{
+ margin-left: 58px;
+ width: fit-content;
 }
 
 /*Media Queries*/
